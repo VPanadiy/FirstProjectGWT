@@ -1,0 +1,25 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.0//EN"
+        "http://gwtproject.org/doctype/2.8.0/gwt-module.dtd">
+<module rename-to="FirstProjectGWT">
+
+    <!-- Inherit the core Web Toolkit stuff.                  -->
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!--Inherit the default stylesheet of GWT. Uncommitted to use-->
+    <!--<inherits name='com.google.gwt.user.theme.clean.Clean'/>-->
+    <!--<inherits name='com.google.gwt.user.theme.standard.Standard'/>-->
+    <!--<inherits name='com.google.gwt.user.theme.chrome.Chrome'/>-->
+    <!--<inherits name='com.google.gwt.user.theme.dark.Dark'/>-->
+
+    <!-- Specify the app entry point class.                   -->
+    <entry-point class='dream.development.firstProjectGWT.client.FirstProjectGWT'/>
+
+    <!-- Specify the app servlets. It seems that can be specified by annotation @RemoteServiceRelativePath("") in class-->
+    <servlet path='/FirstProjectGWTService'
+             class='dream.development.firstProjectGWT.server.serviceImplementations.firstProjectGWTService.FirstProjectGWTServiceImpl'/>
+
+    <!--Specify the paths to translate code in JavaScript-->
+    <source path="client"/>
+    <source path="validator"/>
+
+</module>

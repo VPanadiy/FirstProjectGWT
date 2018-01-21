@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!--Servlets-->
+    <servlet>
+        <servlet-name>dream.development.firstProjectGWT.FirstProjectGWT FirstProjectGWTService</servlet-name>
+        <servlet-class>dream.development.firstProjectGWT.server.serviceImplementations.firstProjectGWTService.FirstProjectGWTServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>dream.development.firstProjectGWT.FirstProjectGWT StringService</servlet-name>
+        <servlet-class>dream.development.firstProjectGWT.server.serviceImplementations.stringService.StringServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>dream.development.firstProjectGWT.FirstProjectGWT CallObjectsService</servlet-name>
+        <servlet-class>
+            dream.development.firstProjectGWT.server.serviceImplementations.callObjectsService.CallObjectsImpl
+        </servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>dream.development.firstProjectGWT.server.serviceImplementations.uploadedFileService.UploadedFileService</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dream.development.firstProjectGWT.FirstProjectGWT FirstProjectGWTService</servlet-name>
+        <url-pattern>/FirstProjectGWT/FirstProjectGWTService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dream.development.firstProjectGWT.FirstProjectGWT StringService</servlet-name>
+        <url-pattern>/FirstProjectGWT/checkString</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dream.development.firstProjectGWT.FirstProjectGWT CallObjectsService</servlet-name>
+        <url-pattern>/FirstProjectGWT/callObjectsCheckString</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/FirstProjectGWT/upload</url-pattern>
+    </servlet-mapping>
+
+    <!--Default page for serve-->
+    <welcome-file-list>
+        <welcome-file>FirstProjectGWT.html</welcome-file>
+    </welcome-file-list>
+
+</web-app>
